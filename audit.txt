@@ -1,0 +1,91 @@
+-Largest Cointentfil Paint
+    This measure when the largest content element in the viewport is rendered to the screen:
+        <img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" class="d-block w-100" alt="...">
+
+-Enable Text Compression
+    Use compression to minimize network bytes
+        …bootstrap/bootstrap.css(127.0.0.1)
+        …bootstrap/bootstrap.bundle.js(127.0.0.1)
+        /assets/maugallery.js(127.0.0.1)
+        http://127.0.0.1:5500
+        /assets/style.css(127.0.0.1)
+
+Eliminate render blocking resources
+    Certain inline resources are blocking the first paint of the page
+        jQuery CDN cdn 
+        /jquery-3.4.1.min.js(code.jquery.com)
+        …bootstrap/bootstrap.bundle.js(127.0.0.1)
+        /assets/maugallery.js(127.0.0.1)
+        /assets/scripts.js(127.0.0.1)
+        …bootstrap/bootstrap.css(127.0.0.1)
+        /assets/style.css(127.0.0.1)
+        Google Fonts cdn 
+        /css2?family=…(fonts.googleapis.com)
+
+Minify JavaScript
+    Minifying JavaScript files can reduce payload sizes and script parse time
+        …bootstrap/bootstrap.bundle.js
+        /assets/maugallery.js
+
+Minify CSS
+    Minifying CSS files can reduce payload sizes and script parse time
+        …bootstrap/bootstrap.css
+
+Reduce unused JavaScript
+    Reduce unused JS and defer loading scripts until they're needed, this will decrease bytes consumed by network activity
+        …bootstrap/bootstrap.bundle.js
+        chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/installHook.js
+
+Reduce unused CSS
+    Reduces unused rules from stylesheets and defer unused CSS for above the fold content to decrease bytes consumed by network activity
+         …bootstrap/bootstrap.css
+
+Serve images in next-gen formats
+    Image formats such as WebP and AVIF provide better compression than PNC or JPEG, this means faster downloads and less data consumption
+        img.d-block.w-100
+        img
+        img
+        img.gallery-item.img-fluid
+        img.d-block.w-100
+        img.gallery-item.img-fluid
+        img.gallery-item.img-fluid
+        img.d-block.w-100
+
+Properly size images
+    Serve images that are appropriately sized to save cellular data and improve load time.
+        img.d-block.w-100
+        img
+        img
+        img.gallery-item.img-fluid
+        img.d-block.w-100
+        img.gallery-item.img-fluid
+        img.gallery-item.img-fluid
+        img.d-block.w-100
+
+Efficiently encode images
+    Optimized images load faster and consume less cellular data
+        img.d-block.w-100
+    
+Page prevented back/forward cache restoration
+    Many navigations are performed by going back or forward. The back and forward cache (bfache) can speed up these return navigations.
+         Pages with WebSocket cannot enter back/forward cache
+
+Image elements do not have explicit width and height
+    Set an explicit width and height on image elements to reduce layout shifts and improve class
+        img.d-block.w-100
+            img
+            img
+            img
+
+Avoid enormous network payloads
+    Large network payloads cost users real money and are highly correlated with long load times.
+        …mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg 6,129.7 KiB
+        …slider/edward-ci….jpg 5,562.0 KiB
+        …portraits/nino-van-….jpg 2,468.7 KiB
+        …images/nina.png 2,106.1 KiB
+        …entreprise/mateus-ca….jpg 1,879.3 KiB
+        …slider/nicholas-….jpg 1,860.1 KiB
+        …mariage/hannah-bu….jpg 1,737.3 KiB
+        …images/camera.png 1,625.4 KiB
+        …slider/ryoji-iwa….jpg 1,586.5 KiB
+        …concerts/austin-ne….jpg 1,438.0 KiB
